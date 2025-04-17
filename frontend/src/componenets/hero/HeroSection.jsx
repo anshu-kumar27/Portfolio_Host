@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 function HeroSection() {
   return (
     <div className="hero min-h-[calc(100vh-6rem)] bg-base-200">
-      <div className="hero-content flex-col lg:flex-row">
+      <div className="hero-content flex-col lg:flex-row p-4">
         <img
           src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjU0bDQyMGl6anNwYnRzdmpkejl1MGxyYmJ4Mzg3Y3k2aHd6MXB6MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YrJp9LFIDkwms/giphy.gif"
           className="w-full max-w-xs sm:max-w-sm rounded-lg shadow-2xl"

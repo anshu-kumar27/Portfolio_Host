@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
-function Navbar() {
+function Navbar({activeSection = 'home'}) {
     const [active, setActive] = useState('home');
     const [theme, setTheme] = useState('night');
-    const [isMenuOpen, setIsMenuOpen] = useState(false); // 👈 for full-screen menu toggle
-
+    const [isMenuOpen, setIsMenuOpen] = useState(activeSection); // 👈 for full-screen menu toggle
+    useEffect(() => {
+        setActive(activeSection);
+        console.log(activeSection)
+    }, [activeSection]);
+    
     useEffect(() => {
         document.querySelector("html").setAttribute("data-theme", theme);
     }, [theme]);
@@ -12,9 +16,20 @@ function Navbar() {
     const handleSetActive = (section) => {
         setActive(section);
         const el = document.getElementById(section);
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-        setIsMenuOpen(false); // close menu after click
+        if (el) {
+            const offset = -80; // adjust this value to your navbar height or more (negative to scroll above)
+            const elementPosition = el.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition + offset;
+    
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+        setIsMenuOpen(false);
     };
+
+    
 
     const toggleTheme = () => {
         setTheme(prev => (prev === 'emerald' ? 'night' : 'emerald'));

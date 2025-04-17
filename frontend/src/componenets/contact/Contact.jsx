@@ -3,6 +3,7 @@ import axios from "axios";
 import Links from "./Links";
 
 function Contact() {
+    const [showStatus, setShowStatus] = useState(true);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -43,11 +44,18 @@ function Contact() {
 
     try {
       const response = await axios.post(
-        "https://formspree.io/f/yourFormID",
+        "https://formspree.io/f/xanegwpv",
         formData
       );
       if (response.status === 200) {
         setStatus("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+  
+        // Fade out after 1s
+        setTimeout(() => setShowStatus(false), 1000);
+  
+        // Clear status after 2s
+        setTimeout(() => setStatus(""), 2000);
       } else {
         setStatus("There was an issue. Please try again.");
       }
@@ -58,12 +66,26 @@ function Contact() {
     }
   };
   return (
-    <div className="flex flex-col lg:flex-row w-full max-w-5xl mx-auto mt-10 gap-8 mb-6 pt-2 p-10">
+    <>
+    <div className='w-[85%] mx-auto text-left'>
+      <h1 className='text-4xl md:text-5xl font-bold mb-4 pb-4 mt-4'>
+        <span
+          role='img'
+          aria-label='lightbulb'
+          className='mr-2 text-5xl md:text-6xl'
+        >
+          🌟
+        </span>
+        Contact
+      </h1>
+      </div>
+    <div className="flex flex-col lg:flex-row w-[85%] mx-auto text-left mb-4 mt-4 pt-4 pb-4">
+        
             {/* Social Icons */}
     <div className="lg:w-1/2 w-full">
             {/* contact lists icons */}
     <div className="">
-    <h3 className="text-3xl font-bold text-left mb-6">💭 Get In Touch</h3>
+    <h3 className="text-3xl font-bold text-left mb-6">💭 You can ping me here</h3>
 
     {/* Location / Email / LinkedIn */}
     <ul className="text-left space-y-2 pt-4">
@@ -160,6 +182,7 @@ function Contact() {
     </div>
 
     </div>
+    </>
   );
 }
 
