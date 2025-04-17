@@ -57,9 +57,9 @@ function MainFile() {
 
 <Divider />
 <div ref={sectionRefs.resume} id="resume">
-  {/* <AnimatedSection direction="right"> */}
+  <AnimatedSection direction="right">
     <Resume />
-  {/* </AnimatedSection> */}
+  </AnimatedSection>
 </div>
 
 <Divider />
