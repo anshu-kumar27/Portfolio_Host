@@ -39,7 +39,7 @@ function About() {
 
           <div className="space-y-2">
             <p><span role="img" aria-label="rocket">🚀</span> Currently working on: Chat-app</p>
-            <p><span role="img" aria-label="satellite">🔭</span> Exploring: WebSockets | Datastructures </p>
+            <p><span role="img" aria-label="satellite">🔭</span> Exploring: WebSockets | Data structures </p>
             <p><span role="img" aria-label="nerd">💡</span> Passionate about: Backend Systems & Full Stack Development</p>
             <p><span role="img" aria-label="email">📫</span> Reach me at: <a href="mailto:anshukumar3552@gmail.com" className="text-blue-500">anshukumar3552@gmail.com</a></p>
             <p><span role="img" aria-label="coding">👨‍💻</span> Status: Code. Debug. Deploy. Repeat.</p>
