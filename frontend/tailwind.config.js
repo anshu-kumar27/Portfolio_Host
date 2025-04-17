@@ -20,6 +20,6 @@ export default {
     require('@tailwindcss/typography')
   ],
   daisyui: {
-    themes: ["night","emerald"]
+    themes: ["emerald","night"]
   }
 }

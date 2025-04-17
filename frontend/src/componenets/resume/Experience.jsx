@@ -10,11 +10,12 @@ function Experience() {
       <div className="mb-4 p-4 sm:p-8 ">
       <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-primary">
   Oriserve | 
-  <span className="text-default sm:text-l md:text-xl font-semibold text-xs">
+  <span className="text-base-content
+ sm:text-l md:text-xl font-semibold text-xs">
     {' '}Software Developer Intern
   </span>
 </h3>
-        <p className="text-xs sm:text-sm mb-2 text-muted-foreground">09-2024 to 03-2025</p>
+        <p className="text-xs sm:text-sm mb-2 text-muted-foreground pt-2">09-2024 to 03-2025</p>
 
         <p className="text-sm sm:text-base mb-2 text-foreground">
           <span className="font-semibold">Tech Stack:</span> Node.js, Express, Redis, Bull, MongoDB, Mongoose, Socket.io, Java

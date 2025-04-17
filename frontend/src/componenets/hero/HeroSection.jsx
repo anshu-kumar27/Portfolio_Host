@@ -1,38 +1,65 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import pfp from '../../assets/pics/pfp.png'
 
 function HeroSection() {
   return (
     <div className="hero min-h-[calc(100vh-6rem)] bg-base-200">
-      <div className="hero-content flex-col lg:flex-row p-4">
+      <div className="hero-content flex-col lg:flex-row w-[85%] mx-auto p-5 text-center lg:text-left">
         <img
-          src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjU0bDQyMGl6anNwYnRzdmpkejl1MGxyYmJ4Mzg3Y3k2aHd6MXB6MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YrJp9LFIDkwms/giphy.gif"
-          className="w-full max-w-xs sm:max-w-sm rounded-lg shadow-2xl"
+          src={pfp}
+          className="w-full max-w-xs sm:max-w-sm p-6"
           alt="gif"
         />
         <div>
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold">
             Hi, I am Anshu Kumar
             <br />
-            <span className="text-2xl">
-            I am a
-            <span className="text-sky-400">
-              <Typewriter
-                words={[" Software Developer", " Fullstack Developer"]}
-                loop={true}
-                cursor
-                cursorStyle="|"
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={1500}
-              />
-            </span>
+            <span className="text-xl sm:text-2xl">
+              I am a
+              <span className="text-sky-400 text-lg sm:text-2xl">
+                <Typewriter
+                  words={[" Software Developer", " Fullstack Developer"]}
+                  loop={true}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1500}
+                />
+              </span>
             </span>
           </h1>
           <p className="py-6">
             Passionate about building full-stack applications with delightful user experiences.
           </p>
-          <button className="btn btn-primary">Let's Connect</button>
+
+          {/* Social Icons */}
+          <div className="flex space-x-4 mt-4 justify-center">
+            <a
+              href="https://github.com/anshu-kumar27/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 text-4xl hover:text-sky-500 hover:shadow-lg hover:shadow-sky-400/50 transition duration-300 p-3 rounded-full"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="www.linkedin.com/in/anshu-kumar-63259521b"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 text-4xl hover:text-sky-500 hover:shadow-lg hover:shadow-sky-400/50 transition duration-300 p-3 rounded-full"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="mailto:anshukumar3552@gmail.com"
+              className="text-gray-500 text-4xl hover:text-sky-500 hover:shadow-lg hover:shadow-sky-400/50 transition duration-300 p-3 rounded-full"
+            >
+              <FaEnvelope />
+            </a>
+          </div>
         </div>
       </div>
     </div>

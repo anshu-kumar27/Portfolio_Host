@@ -76,7 +76,7 @@ function Contact() {
         >
           🌟
         </span>
-        Contact
+        Connect
       </h1>
       </div>
     <div className="flex flex-col lg:flex-row w-[85%] mx-auto text-left mb-4 mt-4 pt-4 pb-4 bg-transparent">
@@ -85,12 +85,13 @@ function Contact() {
     <div className="lg:w-1/2 w-full p-4">
             {/* contact lists icons */}
     <div className="">
-    <h3 className="text-3xl font-bold text-left mb-6">💭 You can ping me here</h3>
+    <h3 className="text-2xl sm:text-2xl lg:text-3xl font-bold text-left mb-6">💭 Get in Touch</h3>
 
     {/* Location / Email / LinkedIn */}
     <ul className="text-left space-y-2 pt-4">
-      <li className="">📍 New Delhi, India</li>
+      <li className="">📍 Noida, India</li>
       <li className="pt-2">📧 anshukumar3552@gmail.com</li>
+      <li className="pt-2">🗺️ Open to Relocate or Remote Work</li>
     </ul>
     <Links 
     isDark = {isDark}
@@ -99,7 +100,7 @@ function Contact() {
     </div>
   
     <div className="lg:w-1/2 w-full bg-white/10 backdrop-blur-md rounded-xl shadow-md p-4">
-      <h2 className="text-3xl font-bold text-left mb-6">☘️ Let's Work Together </h2>
+      <h2 className="text-2xl sm:text-2xl lg:text-3xl font-bold text-left mb-6">☘️ Let's Work Together </h2>
       <form onSubmit={handleSubmit}>
         {/* Name */}
         <div className="mb-4">
@@ -157,7 +158,7 @@ function Contact() {
               ${
                 loading
                   ? "bg-gray-400 cursor-not-allowed text-black"
-                  : `hover:bg-gradient-to-r from-sky-400 via-emerald-400 to-sky-400 shadow-md shadow-emerald-300 ${
+                  : `transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-sky-400 via-emerald-400 to-sky-400 shadow-md shadow-emerald-300  ease-in-out${
                       isDark ? "text-white" : "text-black"
                     }`
               }

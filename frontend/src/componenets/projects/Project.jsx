@@ -1,15 +1,15 @@
-import React from 'react'
+import React,{useState} from 'react'
 import ProjectMainCard from './ProjectMainCard'
-import chatAppImg from '../../assets/projects/chatappMern.png'
-import waverImg from '../../assets/projects/chatappMern.png'
+import chatAppImg from '../../assets/projects/chatAppMern.jpeg'
+import waverImg from '../../assets/projects/java.png'
 import portfolioImg from '../../assets/projects/portfolio.png'
 import AnimatedSection from '../../AnimatedSection'
 import ecommerceImg from '../../assets/projects/ecom.png'
 import facultyImg from '../../assets/projects/faculty.png'
 import folderImg from '../../assets/projects/filefolder.png'
-
-import newsImg from '../../assets/projects/newswebsite.png'
-import casinoImg from '../../assets/projects/casino.png'
+import ProjectOpen from './ProjectOpen'
+// import newsImg from '../../assets/projects/newswebsite.png'
+// import casinoImg from '../../assets/projects/casino.png'
 
 function Project () {
   const projects = [
@@ -47,6 +47,7 @@ function Project () {
         ],
         githublink: 'https://github.com/anshu-kumar27/E-com',
         desc: [
+            "🎓 This was a learning project, main focus was in the BACKEND",
             "🛍️ Built a full-featured e-commerce platform with a sleek user interface.",
             "👤 Users can register/login, browse products, filter by category, and manage carts.",
             "📦 Includes secure order placement and cart operations.",
@@ -74,7 +75,7 @@ function Project () {
         img:folderImg
       },
     {
-        name: 'Portfolio <Updating...>',
+        name: 'Portfolio',
         tech: ['React', 'Tailwind CSS', 'Typewriter','Framer motion','Daisyui'],
         githublink: '/',
         desc: [
@@ -93,6 +94,7 @@ function Project () {
       tech: ['Java', 'Springboot', 'React', 'Websocket',  'Tailwind', 'Mongodb'],
       githublink: 'https://github.com/anshu-kumar27/waverr_chatapp',
       desc: [
+        "🎓This was a learning project",
         "🌊 Exploring the diversity in my tech stack with a Java-based chat app!",
         "☕ Built using Java, Spring Boot, and WebSockets for real-time communication.",
         "🛠️ Frontend crafted with React and styled using Tailwind CSS.",
@@ -137,8 +139,10 @@ function Project () {
     //     img:casinoImg
     //   }
   ]
-
+const [showModal, setShowModal] = useState(false)
+const [selectedProject, setSelectedProject] = useState(null);
   return (
+    <>
     <div className='w-[85%] mx-auto text-left'>
       <h1 className='text-4xl md:text-5xl font-bold mb-4 pb-4 mt-4'>
         <span
@@ -150,9 +154,12 @@ function Project () {
         </span>
         Projects
       </h1>
-      <div className='grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pb-4 pt-2'>
+      <div className='grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pb-4 pt-2 '
+      onClick={() => setShowModal(true)}
+      >
         {projects.map((project, index) => (
   <AnimatedSection key={index} direction={window.innerWidth >= 1024 ? index < 3 ? 'left' : 'right' : index % 2 === 0 ? 'left' : 'right'  }>
+  <div onClick={()=>setSelectedProject(project)}>
   <ProjectMainCard
     name={project.name}
     tech={project.tech}
@@ -160,12 +167,24 @@ function Project () {
     desc={project.desc}
     img={project.img}
   />
-</AnimatedSection>
+  </div>
+ </AnimatedSection>
         ))}
       </div>
 
 
     </div>
+    {selectedProject && (
+  <ProjectOpen
+    name={selectedProject.name}
+    tech={selectedProject.tech}
+    githublink={selectedProject.githublink}
+    desc={selectedProject.desc}
+    img={selectedProject.img}
+    onClose={() => setSelectedProject(null)}
+  />
+)}
+          </>
   )
 }
 

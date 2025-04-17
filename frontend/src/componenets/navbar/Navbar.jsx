@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 function Navbar({activeSection = 'home'}) {
     const [active, setActive] = useState('home');
-    const [theme, setTheme] = useState('night');
+    const [theme, setTheme] = useState('emerald');
     const [isMenuOpen, setIsMenuOpen] = useState(false); // 👈 for full-screen menu toggle
     useEffect(() => {
         setActive(activeSection);
-        console.log(activeSection)
     }, [activeSection]);
     
     useEffect(() => {
@@ -38,7 +37,7 @@ function Navbar({activeSection = 'home'}) {
     return (
         <>
             {/* NAVBAR */}
-            <div className="navbar bg-base-100 shadow-sm sticky top-0 z-50 px-[1.5rem] backdrop-blur-md bg-opacity-90 p-4">
+            <div className="navbar bg-base-100 shadow-sm sticky top-0 z-50 px-[1.5rem] backdrop-blur-md bg-opacity-85 p-4">
                 <div className="flex-1">
                     <a className="btn btn-ghost text-3xl font-rouge text-sky-300">A K .</a>
                 </div>

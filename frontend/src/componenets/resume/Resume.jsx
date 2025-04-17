@@ -54,12 +54,12 @@ function Resume() {
         Resume
       </h1>
 
-      <ul className="flex justify-center space-x-6 font-semibold text-base lg:text-2xl">
+      <ul className="flex justify-center space-x-6 font-semibold text-sm sm:text-base md:text-lg lg:text-2xl">
         {tabs.map((item) => (
           <li key={item}>
             <button
               onClick={() => handleSetActive(item)}
-              className={`transition-all duration-300 ease-in-out px-4 py-1 rounded-md pb-2 pt-2
+              className={`transition-all duration-300 ease-in-out px-4 py-1 rounded-md pb-2 pt-2 sm:text-base
                 ${active === item
                   ? "bg-gradient-to-r from-sky-400 via-emerald-400 to-sky-400 text-white shadow-md shadow-emerald-300"
                   : "text-gray-600"
