@@ -43,10 +43,10 @@ function MainFile() {
 
   return (
     <div>
-      <Navbar activeSection={activeSection} />
-      <div ref={sectionRefs.home} id="home">
-        <HeroSection />
-      </div>
+        <Navbar activeSection={activeSection} />
+        <div ref={sectionRefs.home} id="home">
+          <HeroSection />
+        </div>
 
       <Divider />
       <div ref={sectionRefs.about} id="about">
@@ -57,9 +57,9 @@ function MainFile() {
 
 <Divider />
 <div ref={sectionRefs.resume} id="resume">
-  <AnimatedSection direction="right">
+  {/* <AnimatedSection direction="right"> */}
     <Resume />
-  </AnimatedSection>
+  {/* </AnimatedSection> */}
 </div>
 
 <Divider />

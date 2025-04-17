@@ -40,8 +40,9 @@ const AnimatedSection = ({ children, direction = "left" }) => {
   };
 
   return (
-    <div style={{ display: "grid" }}>
+    <div className="overflow-hidden">
       <motion.div
+
         ref={ref}
         initial="hidden"
         animate={controls}
