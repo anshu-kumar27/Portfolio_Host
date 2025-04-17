@@ -44,7 +44,6 @@ function MainFile() {
   return (
     <div>
       <Navbar activeSection={activeSection} />
-
       <div ref={sectionRefs.home} id="home">
         <HeroSection />
       </div>

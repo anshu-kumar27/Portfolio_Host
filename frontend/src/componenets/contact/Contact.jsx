@@ -67,8 +67,8 @@ function Contact() {
   };
   return (
     <>
-    <div className='w-[85%] mx-auto text-left p-5'>
-      <h1 className='text-4xl md:text-5xl font-bold mb-4 pb-4 mt-4'>
+    <div className='w-[85%] mx-auto text-left pl-0 pr-5 pb-5 pt-2'>
+      <h1 className='text-4xl md:text-5xl font-bold mt-4'>
         <span
           role='img'
           aria-label='lightbulb'
