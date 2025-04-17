@@ -6,6 +6,7 @@ import About from './componenets/about/About';
 import Resume from './componenets/resume/Resume';
 import Contact from './componenets/contact/Contact';
 import Cc from './componenets/Cc';
+import AnimatedSection from './AnimatedSection';
 
 function MainFile() {
   const [activeSection, setActiveSection] = useState("home");
@@ -50,23 +51,29 @@ function MainFile() {
 
       <Divider />
       <div ref={sectionRefs.about} id="about">
-        <About />
-      </div>
+  <AnimatedSection direction="center">
+    <About />
+  </AnimatedSection>
+</div>
 
-      <Divider />
-      <div ref={sectionRefs.resume} id="resume">
-        <Resume />
-      </div>
+<Divider />
+<div ref={sectionRefs.resume} id="resume">
+  <AnimatedSection direction="right">
+    <Resume />
+  </AnimatedSection>
+</div>
 
-      <Divider />
-      <div ref={sectionRefs.projects} id="projects">
-        <Project />
-      </div>
+<Divider />
+<div ref={sectionRefs.projects} id="projects">
+  <Project/>
+</div>
 
-      <Divider />
-      <div ref={sectionRefs.contact} id="contact">
-        <Contact />
-      </div>
+<Divider />
+<div ref={sectionRefs.contact} id="contact">
+  <AnimatedSection direction="center">
+    <Contact />
+  </AnimatedSection>
+</div>
 
       <Divider />
       <Cc />

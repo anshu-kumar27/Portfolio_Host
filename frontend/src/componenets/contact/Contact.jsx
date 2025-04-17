@@ -67,7 +67,7 @@ function Contact() {
   };
   return (
     <>
-    <div className='w-[85%] mx-auto text-left'>
+    <div className='w-[85%] mx-auto text-left p-5'>
       <h1 className='text-4xl md:text-5xl font-bold mb-4 pb-4 mt-4'>
         <span
           role='img'
@@ -79,10 +79,10 @@ function Contact() {
         Contact
       </h1>
       </div>
-    <div className="flex flex-col lg:flex-row w-[85%] mx-auto text-left mb-4 mt-4 pt-4 pb-4">
+    <div className="flex flex-col lg:flex-row w-[85%] mx-auto text-left mb-4 mt-4 pt-4 pb-4 bg-transparent">
         
             {/* Social Icons */}
-    <div className="lg:w-1/2 w-full">
+    <div className="lg:w-1/2 w-full p-4">
             {/* contact lists icons */}
     <div className="">
     <h3 className="text-3xl font-bold text-left mb-6">💭 You can ping me here</h3>
@@ -98,8 +98,8 @@ function Contact() {
     </div>
     </div>
   
-    <div className="lg:w-1/2 w-full">
-      <h2 className="text-3xl font-bold text-left mb-6">📬 Get In Touch </h2>
+    <div className="lg:w-1/2 w-full bg-white/10 backdrop-blur-md rounded-xl shadow-md p-4">
+      <h2 className="text-3xl font-bold text-left mb-6">☘️ Let's Work Together </h2>
       <form onSubmit={handleSubmit}>
         {/* Name */}
         <div className="mb-4">

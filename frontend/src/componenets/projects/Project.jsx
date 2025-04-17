@@ -3,7 +3,7 @@ import ProjectMainCard from './ProjectMainCard'
 import chatAppImg from '../../assets/projects/chatappMern.png'
 import waverImg from '../../assets/projects/chatappMern.png'
 import portfolioImg from '../../assets/projects/portfolio.png'
-
+import AnimatedSection from '../../AnimatedSection'
 import ecommerceImg from '../../assets/projects/ecom.png'
 import facultyImg from '../../assets/projects/faculty.png'
 import folderImg from '../../assets/projects/filefolder.png'
@@ -152,14 +152,15 @@ function Project () {
       </h1>
       <div className='grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pb-4 pt-2'>
         {projects.map((project, index) => (
-          <ProjectMainCard
-            key={index}
-            name={project.name}
-            tech={project.tech}
-            githublink={project.githublink}
-            desc = {project.desc}
-            img = {project.img}
-          />
+  <AnimatedSection key={index} direction={window.innerWidth >= 1024 ? index < 3 ? 'left' : 'right' : index % 2 === 0 ? 'left' : 'right'  }>
+  <ProjectMainCard
+    name={project.name}
+    tech={project.tech}
+    githublink={project.githublink}
+    desc={project.desc}
+    img={project.img}
+  />
+</AnimatedSection>
         ))}
       </div>
 

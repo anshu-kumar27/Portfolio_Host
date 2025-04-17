@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 function Navbar({activeSection = 'home'}) {
     const [active, setActive] = useState('home');
     const [theme, setTheme] = useState('night');
-    const [isMenuOpen, setIsMenuOpen] = useState(activeSection); // 👈 for full-screen menu toggle
+    const [isMenuOpen, setIsMenuOpen] = useState(false); // 👈 for full-screen menu toggle
     useEffect(() => {
         setActive(activeSection);
         console.log(activeSection)
