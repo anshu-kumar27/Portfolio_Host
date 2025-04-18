@@ -19,7 +19,7 @@ function ProjectMainCard({ name = '', tech = [], githublink = '', desc = [], img
   />
 </figure>
         <div className="card-body">
-          <h2 className="card-title group-hover:text-cyan-400 transition-colors duration-300">{name}</h2>
+          <h2 className="card-title group-hover:text-primary transition-colors duration-300">{name}</h2>
           <div className="flex flex-wrap gap-2 my-2 p-2">
             {tech.map((item, index) => (
               <span key={index} className="badge badge-outline p-2">{item}</span>

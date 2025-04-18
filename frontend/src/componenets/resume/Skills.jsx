@@ -10,7 +10,7 @@ import { PiDatabaseLight } from "react-icons/pi";
 
 const SkillItem = ({ icon: Icon, label }) => (
   <div className="relative group cursor-pointer">
-    <div className="text-4xl sm:text-5xl transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:text-sky-400 p-1">
+    <div className="text-4xl sm:text-5xl transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:text-primary p-1">
       <Icon />
     </div>
     <span className="absolute -top-8 left-1/2 -translate-x-1/2 text-xs text-foreground bg-background px-2 py-0.5 rounded opacity-0 group-hover:opacity-100 transition duration-300 shadow-sm border border-border z-10 whitespace-nowrap">

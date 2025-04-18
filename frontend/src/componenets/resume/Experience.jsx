@@ -25,7 +25,7 @@ function Experience() {
           <li>Developed and deployed voice, chat, and WhatsApp bots tailored for diverse use cases.</li>
           <li>Optimized voice bot latency using Redis for real-time state and caching mechanisms.</li>
           <li>Built complex MongoDB aggregation pipelines to support client-specific reporting and queries.</li>
-          <li>Improved API reliability by designing comprehensive testing workflows to catch edge cases.</li>
+          <li>Conducted API testing and debugged issues across multiple client integrations, reducing error rates and improving bot reliability. </li>
           <li>Worked on prompt engineering with GPT-4o and GPT-4o mini to enhance response accuracy.</li>
         </ul>
       </div>

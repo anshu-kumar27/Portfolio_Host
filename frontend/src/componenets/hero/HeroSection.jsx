@@ -18,7 +18,7 @@ function HeroSection() {
             <br />
             <span className="text-xl sm:text-2xl">
               I am a
-              <span className="text-sky-400 text-lg sm:text-2xl">
+              <span className="text-primary text-lg sm:text-2xl">
                 <Typewriter
                   words={[" Software Developer", " Fullstack Developer"]}
                   loop={true}
@@ -41,21 +41,21 @@ function HeroSection() {
               href="https://github.com/anshu-kumar27/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 text-4xl hover:text-sky-500 hover:shadow-lg hover:shadow-sky-400/50 transition duration-300 p-3 rounded-full"
+              className="text-gray-500 text-4xl hover:text-primary hover:shadow-lg hover:shadow-sky-400/50 transition duration-300 p-3 rounded-full"
             >
               <FaGithub />
             </a>
             <a
-              href="www.linkedin.com/in/anshu-kumar-63259521b"
+              href="https://www.linkedin.com/in/anshu-kumar-63259521b"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 text-4xl hover:text-sky-500 hover:shadow-lg hover:shadow-sky-400/50 transition duration-300 p-3 rounded-full"
+              className="text-gray-500 text-4xl hover:text-primary hover:shadow-lg hover:shadow-sky-400/50 transition duration-300 p-3 rounded-full"
             >
               <FaLinkedin />
             </a>
             <a
               href="mailto:anshukumar3552@gmail.com"
-              className="text-gray-500 text-4xl hover:text-sky-500 hover:shadow-lg hover:shadow-sky-400/50 transition duration-300 p-3 rounded-full"
+              className="text-gray-500 text-4xl hover:text-primary hover:shadow-lg hover:shadow-sky-400/50 transition duration-300 p-3 rounded-full"
             >
               <FaEnvelope />
             </a>

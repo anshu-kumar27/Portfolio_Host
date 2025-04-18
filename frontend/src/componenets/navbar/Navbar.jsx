@@ -50,7 +50,7 @@ function Navbar({activeSection = 'home'}) {
                             <li key={item}>
                                 <button
                                     onClick={() => handleSetActive(item)}
-                                    className={`relative transition-all duration-300 ease-in-out hover:text-sky-400 
+                                    className={`relative transition-all duration-300 ease-in-out hover:text-primary 
                                         ${
                                             active === item
                                                 ? "text-sky-0 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:bg-gradient-to-r after:from-sky-400 after:via-emerald-400 after:to-sky-400 after:rounded-sm after:animate-pulse"
@@ -88,7 +88,7 @@ function Navbar({activeSection = 'home'}) {
                 <div className="fixed inset-0 z-50 bg-base-100 bg-opacity-95 backdrop-blur-md flex flex-col items-center justify-center space-y-8 text-xl font-semibold lg:hidden transition-all duration-300">
                     <button
                         onClick={() => setIsMenuOpen(false)}
-                        className="absolute top-5 right-5 btn btn-sm btn-circle hover:text-sky-400"
+                        className="absolute top-5 right-5 btn btn-sm btn-circle hover:text-primary"
                     >
                         ✕
                     </button>
@@ -97,7 +97,7 @@ function Navbar({activeSection = 'home'}) {
                             key={item}
                             onClick={() => handleSetActive(item)}
                             className={`text-2xl ${
-                                active === item ? "text-sky-500 underline underline-offset-8" : ""
+                                active === item ? "text-primary underline underline-offset-8" : ""
                             }`}
                         >
                             {item.charAt(0).toUpperCase() + item.slice(1)}

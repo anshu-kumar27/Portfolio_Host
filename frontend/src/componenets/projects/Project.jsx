@@ -8,8 +8,6 @@ import ecommerceImg from '../../assets/projects/ecom.png'
 import facultyImg from '../../assets/projects/faculty.png'
 import folderImg from '../../assets/projects/filefolder.png'
 import ProjectOpen from './ProjectOpen'
-// import newsImg from '../../assets/projects/newswebsite.png'
-// import casinoImg from '../../assets/projects/casino.png'
 
 function Project () {
   const projects = [
@@ -24,7 +22,7 @@ function Project () {
         'Socket.io',
         'Redux',
       ],
-      githublink: 'https://github.com/anshu-kumar27/chatapplication',
+      githublink: '/',
       desc : [
         "💬 Created a full-duplex real-time chat application using Socket.io & WebSockets.",
         "🛡️ Implemented JWT authentication and Redux for secure state management.",
@@ -45,7 +43,7 @@ function Project () {
           'Nodemailer',
           'Bootstrap'
         ],
-        githublink: 'https://github.com/anshu-kumar27/E-com',
+        githublink: '/',
         desc: [
             "🎓 This was a learning project, main focus was in the BACKEND",
             "🛍️ Built a full-featured e-commerce platform with a sleek user interface.",
@@ -62,7 +60,7 @@ function Project () {
       {
         name: '✨ File_Folder_System',
         tech: ['C++', 'DSA', 'Searching', 'Array', 'Queue','Stack' ,'Sorting'],
-        githublink: 'https://github.com/anshu-kumar27/File_Folder_System',
+        githublink: '/',
         desc: [
             "📁 Designed a file-folder simulation system using C++.",
             "🧮 Implemented data structures like Arrays and Queues for in-memory organization.",
@@ -92,7 +90,7 @@ function Project () {
     {
       name: 'Chat-App ~waver',
       tech: ['Java', 'Springboot', 'React', 'Websocket',  'Tailwind', 'Mongodb'],
-      githublink: 'https://github.com/anshu-kumar27/waverr_chatapp',
+      githublink: '/',
       desc: [
         "🎓This was a learning project",
         "🌊 Exploring the diversity in my tech stack with a Java-based chat app!",
@@ -108,7 +106,7 @@ function Project () {
       {
         name: 'Faculty-Website',
         tech: ['Nodejs', 'Express', 'React', 'Redux', 'Bootstrap', 'Mongodb'],
-        githublink: 'https://github.com/anshu-kumar27/Faculty-Website',
+        githublink: '/',
         desc: [
             "🏫 Developed as part of a college project at Shoolini University.",
             "📚 A full-stack Faculty Directory web app built with the MERN stack.",
@@ -120,24 +118,6 @@ function Project () {
           ],
         img:facultyImg
       },
-    //   {
-    //     name: 'Newswebsite',
-    //     tech: [
-    //       'Html',
-    //       'css',
-    //       "javascript"
-    //     ],
-    //     githublink: 'https://github.com/anshu-kumar27/News_Web',
-    //     desc : ["sample","hello"],
-    //     img:newsImg
-    //   },
-    //   {
-    //     name: 'Casino',
-    //     tech: ['c++'],
-    //     githublink: 'https://github.com/anshu-kumar27/casino-project-',
-    //     desc : ["sample","hello"],
-    //     img:casinoImg
-    //   }
   ]
 const [showModal, setShowModal] = useState(false)
 const [selectedProject, setSelectedProject] = useState(null);
