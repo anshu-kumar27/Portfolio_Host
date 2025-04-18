@@ -10,7 +10,8 @@ function HeroSection() {
         <img
           src={pfp}
           className="w-full max-w-xs sm:max-w-sm p-6"
-          alt="gif"
+          alt="pfp"
+          loading="eager"
         />
         <div>
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold">
