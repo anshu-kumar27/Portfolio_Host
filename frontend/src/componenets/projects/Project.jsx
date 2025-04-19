@@ -8,11 +8,18 @@ import ecommerceImg from '../../assets/projects/ecom.png'
 import facultyImg from '../../assets/projects/faculty.png'
 import folderImg from '../../assets/projects/filefolder.png'
 import ProjectOpen from './ProjectOpen'
+import { MdUpdate, MdLiveTv } from 'react-icons/md';
+
 
 function Project () {
   const projects = [
     {
-      name: '✨ Chat App <Updating...>',
+      name: (
+        <>
+          ✨ Chatting website
+          <MdUpdate className="inline-block mr-2 text-red-500" />
+        </>
+      ),
       tech: [
         'Node.js',
         'Express.js',
@@ -24,6 +31,7 @@ function Project () {
       ],
       githublink: '/',
       desc : [
+        "🚧 in development",
         "💬 Created a full-duplex real-time chat application using Socket.io & WebSockets.",
         "🛡️ Implemented JWT authentication and Redux for secure state management.",
         "🧠 Backend with Express & MongoDB, Frontend with React & Tailwind.",
@@ -73,7 +81,12 @@ function Project () {
         img:folderImg
       },
     {
-        name: 'Portfolio',
+      name: (
+        <>
+          ✨ Portfolio
+          <MdLiveTv className="inline-block mr-2 text-red-500" />
+        </>
+      ),
         tech: ['React', 'Tailwind CSS', 'Typewriter','Framer motion','Daisyui'],
         githublink: '/',
         desc: [
@@ -88,7 +101,7 @@ function Project () {
         img:portfolioImg
       },
     {
-      name: 'Chat-App ~waver',
+      name: 'Chat application',
       tech: ['Java', 'Springboot', 'React', 'Websocket',  'Tailwind', 'Mongodb'],
       githublink: '/',
       desc: [

@@ -32,7 +32,7 @@ function HeroSection() {
               </span>
             </span>
           </h1>
-          <p className="py-6">
+          <p className="pt-6 pb-4">
             Passionate about building full-stack applications with delightful user experiences.
           </p>
 
