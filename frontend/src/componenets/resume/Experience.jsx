@@ -18,7 +18,7 @@ function Experience() {
         <p className="text-xs sm:text-sm mb-2 text-muted-foreground pt-2">09-2024 to 03-2025</p>
 
         <p className="text-sm sm:text-base mb-2 text-foreground">
-          <span className="font-semibold">Tech Stack:</span> Node.js, Express, Redis, Bull, MongoDB, Mongoose, Socket.io, Java
+          <span className="font-semibold">Tech Stack:</span> Tools & Technologies: JavaScript (Node.js, Express.js), Mongoose, Socket.io, Redis, Bull, MongoDB, MySQL, Java. 
         </p>
 
         <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-foreground">
