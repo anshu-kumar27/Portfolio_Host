@@ -18,15 +18,15 @@ function Experience() {
         <p className="text-xs sm:text-sm mb-2 text-muted-foreground pt-2">09-2024 to 03-2025</p>
 
         <p className="text-sm sm:text-base mb-2 text-foreground">
-          <span className="font-semibold">Tech Stack:</span> Tools & Technologies: JavaScript (Node.js, Express.js), Mongoose, Socket.io, Redis, Bull, MongoDB, MySQL, Java. 
+          <span className="font-semibold">Tools & Technologies: </span> JavaScript (Node.js, Express.js), MongoDB, Mongoose, Redis, Bull, Socket.io, MySQL, Postman.
         </p>
 
         <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-foreground">
-          <li>Developed and deployed voice, chat, and WhatsApp bots tailored for diverse use cases.</li>
-          <li>Optimized voice bot latency using Redis for real-time state and caching mechanisms.</li>
-          <li>Built complex MongoDB aggregation pipelines to support client-specific reporting and queries.</li>
-          <li>Conducted API testing and debugged issues across multiple client integrations, reducing error rates and improving bot reliability. </li>
-          <li>Worked on prompt engineering with GPT-4o and GPT-4o mini to enhance response accuracy.</li>
+          <li>Contributed to 5 chatbot projects across diverse sectors including FinServ, fintech, telecommunications, and real estate, delivering tailored Voice, Web, and WhatsApp bots aligned with client-specific BRD requirements.</li>
+          <li>Optimized web bot performance by implementing Redis caching to reduce redundant API calls and server load, while enhancing voice bot efficiency by minimizing latency across varying message lengths for seamless real-time interactions.</li>
+          <li>Developed structured prompts for GPT-4.0 and GPT-4.0 Mini to enhance model response accuracy across dynamic use cases. </li>
+          <li>Automated MongoDB report generation using Node-Cron, aggregation pipelines, and Excel.js to ensure timely and accurate export-ready data.</li>
+          {/* <li>Worked on prompt engineering with GPT-4o and GPT-4o mini to enhance response accuracy.</li> */}
         </ul>
       </div>
     </div>
