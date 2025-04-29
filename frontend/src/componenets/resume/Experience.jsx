@@ -2,12 +2,12 @@ import React from 'react';
 
 function Experience() {
   return (
-    <div className="p-4 sm:p-6 cursor-default mt-4">
+    <div className="p-4 sm:p-6 cursor-default mt-4 overflow-y-scroll">
       <h2 className="text-xl sm:text-3xl md:text-2xl font-bold mb-6 text-foreground">
       📌 Welcome to my Professional Experience Journey
       </h2>
 
-      <div className="mb-4 p-4 sm:p-8 ">
+      <div className="mb-4 p-4 sm:p-8">
       <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-primary">
   Oriserve | 
   <span className="text-base-content

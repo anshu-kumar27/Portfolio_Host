@@ -48,7 +48,7 @@ function Resume() {
   };
 
   return (
-    <div className='w-[85%] mx-auto text-left mb-4 mt-4 pt-4 pb-4 overflow-hidden'>
+    <div className='w-[85%] mx-auto text-left mb-4 mt-4 pt-4 pb-4 overflow-x-hidden overflow-y-auto'>
       <h1 className='text-4xl md:text-5xl font-bold mb-4 pb-4'>
         <span role='img' aria-label='rocket' className='mr-2 text-5xl md:text-6xl'>📜</span>
         Resume
